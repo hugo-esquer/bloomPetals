@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BloomPetals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="liste-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form id="recherche-form" action="Recherche.php" method="get">
+                <input id="recherche-input" type="text" name="q" placeholder="Recherche...">
+            </form>
+        </nav>
+    </header>
+    <main class="contact">
+        <section class="formulaire">
+            <h1>
+                Contactez Nous
+            </h1>
+            <p>
+                ...
+            </p>
+            <label for="civilité">Choisir une civilité
+                <select id="civilité" name="civilité">
+                  <option value="">(civilité)</option>
+                  <option value="1">Monsieur</option>
+                  <option value="2">Madame</option>
+                  <option value="3">Autre</option>
+                </select>
+            </label>
+            <label for="prénom">Enter votre prénom : <input id="prénom" name="prénom" type="text" required /></label>
+            <label for="nom-de-famille">Enter votre Nom de famille : <input id="nom-de-famille" name="nom-de-famille" type="text" required /></label>
+            <label for="adresse">Enter votre adresse: <input id="adresse" name="adresse" type="text" required /></label>
+            <label for="termes-et-conditions">
+                <input class="inline" id="termes-et-conditions" type="checkbox" required name="termes-et-conditions" /> j'accepte la politique de confidentialité de BloomPeltals
+              </label>
+              <input type="submit" value="Submit" />
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

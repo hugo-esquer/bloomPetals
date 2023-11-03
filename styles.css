@@ -1,8 +1,13 @@
 body{
     background-color: antiquewhite;
+    font-family: Georgia;
 }
 
 /*Header*/
+header{
+    box-shadow: 0 5px 5px black;
+}
+
 nav{
     display: flex;
     background-color: gray;
@@ -43,7 +48,6 @@ input{
 }
 
 /*Main index*/
-
 main{
     padding: 4%;
 }
@@ -73,7 +77,6 @@ main{
 }
 
 /*services index*/
-
 .services{
     display: flex;
     justify-content: space-evenly;
@@ -87,9 +90,83 @@ main{
     height: 20px;
 }
 
-/*footer*/
+/*Main entreprise*/
+.entreprise{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.entreprise img{
+    padding: 5px;
+}
+
+.galerie-entreprise{
+    display: flex;
+}
+
+.photo-marie-justine{
+    display: flex;
+    flex-direction: column;
+}
+.photo-marie-justine img{
+    max-width: 200px;
+}
+
+.photo-alice img{
+    max-width: 295px;
+}
+
+.nos-engagements{
+    max-width: 500px;
+}
+
+/*main contact*/
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+label{
+    padding: 3% 0;
+}
+
+/*main réalisation*/
+.titre-réalisation{
+    text-align: center;
+}
+.realisation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.realisation img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px black;
+}
+
+/*footer*/
 footer{
     height: 50px;
     background: gray;
+    box-shadow: 0 5px 5px black;
 }
+
