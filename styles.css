@@ -5,7 +5,7 @@ body{
 
 /*Header*/
 header{
-    box-shadow: 0 5px 5px black;
+    box-shadow: 2px 5px 5px black;
 }
 
 nav{
@@ -160,13 +160,13 @@ label{
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 1px 5px 5px black;
+    box-shadow: 2px 5px 5px black;
 }
 
 /*footer*/
 footer{
     height: 50px;
     background: gray;
-    box-shadow: 0 5px 5px black;
+    box-shadow: 2px 5px 5px black;
 }
 
