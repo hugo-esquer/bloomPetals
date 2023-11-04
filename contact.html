@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact BloomPetals</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="liste-nav">
+      <nav>
+          <label for="touch"><span>Menu</span></label>
+            <input type="checkbox" id="touch"> 
+              <ul class="slide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="entreprise.html">Entreprise</a></li>
                 <li><a href="realisations.html">Réalisations</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <form id="recherche-form" action="Recherche.php" method="get">
-                <input id="recherche-input" type="text" name="q" placeholder="Recherche...">
-            </form>
-        </nav>
-    </header>
+              </ul>
+      </nav>
+    </header> 
     <main class="contact">
+        <h1>
+            Contactez Nous
+        </h1>
+        <p>
+            Pour toute question ou commande n'hésitez pas à nous contacter.
+        </p>
         <section class="formulaire">
-            <h1>
-                Contactez Nous
-            </h1>
-            <p>
-                ...
-            </p>
             <label for="civilité">Choisir une civilité
                 <select id="civilité" name="civilité">
                   <option value="">(civilité)</option>
@@ -36,13 +38,13 @@
                   <option value="3">Autre</option>
                 </select>
             </label>
-            <label for="prénom">Enter votre prénom : <input id="prénom" name="prénom" type="text" required /></label>
-            <label for="nom-de-famille">Enter votre Nom de famille : <input id="nom-de-famille" name="nom-de-famille" type="text" required /></label>
-            <label for="adresse">Enter votre adresse: <input id="adresse" name="adresse" type="text" required /></label>
+            <label for="prénom">Entrer votre prénom : <input id="prénom" name="prénom" type="text" required /></label>
+            <label for="nom-de-famille">Entrer votre Nom de famille : <input id="nom-de-famille" name="nom-de-famille" type="text" required /></label>
+            <label for="adresse">Entrer votre adresse: <input id="adresse" name="adresse" type="text" required /></label>
             <label for="termes-et-conditions">
                 <input class="inline" id="termes-et-conditions" type="checkbox" required name="termes-et-conditions" /> j'accepte la politique de confidentialité de BloomPeltals
-              </label>
-              <input type="submit" value="Submit" />
+            </label>
+            <input type="submit" value="Submit" />
         </section>
     </main>
     <footer>

@@ -3,50 +3,124 @@ body{
     font-family: Georgia;
 }
 
-/*Header*/
-header{
-    box-shadow: 2px 5px 5px black;
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+    font-weight: 100;
+    margin: 0;
 }
 
-nav{
-    display: flex;
-    background-color: gray;
-    justify-content: space-around;
+
+/*Header*/ul {
+	padding: 0px;
 }
 
-form{
-    display: flex;
-    align-items: center;
+header {
+	box-shadow: 2px 5px 5px black;
 }
 
-input{
-    border-radius: 10px;
+/*---------------------*/
+/* MENU Styles communs */
+/*---------------------*/
+nav {
+	text-align: center;
+	margin: 0px auto;
+	background-color: gray;
 }
 
-.liste-nav{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0 ;
+nav a {
+	font-size: 22px;
+	padding: 5px;
+	text-decoration: none;
+	color: #262d35;
 }
 
-.liste-nav li{
-    text-align: center;
+nav a:hover {
+	color: white;
+	background-color: dimgray;
+	transition: 0.5s;
 }
 
-.liste-nav a{
-    color: black;
-    text-decoration: none;
-    padding: 14px 16px;
+/*-------------------*/
+/* MENU Style BUREAU */
+/*-------------------*/
+nav label,
+nav input {
+	display: none;
 }
 
-.liste-nav a:hover{
-    background: dimgray;
-    color: black;
+.slide li {
+	/* Styles liens desktop */
+	display: inline-block;
+	padding: 10px 5%;
 }
 
+/*----------*/
+/* MENU RWD */
+/*----------*/
+@media (max-width: 1024px) {	
+    h1{
+        font-size: 3em;
+    }
+
+    nav {
+		width: 100%;
+	}
+
+	nav label,
+	nav input {
+		display: block;
+	}
+
+	span {
+		/* Entête du menu */
+		padding: 10px 20px;
+		background: #2d2f31;
+		/* Couleur de l'entête du menu */
+		color: white;
+		font-size: 22px;
+		cursor: pointer;
+		display: block;
+	}
+
+	span::after {
+		float: right;
+		right: 10%;
+		content: "+";
+	}
+
+	.slide {
+		/* Menu déroulant */
+		clear: both;
+		background-color: #eeeeee;
+		width: 100%;
+		height: 0px;
+		overflow: hidden;
+		text-align: center;
+		transition: height .4s ease;
+	}
+
+	.slide li {
+		/* Styles liens mobile */
+		display: block;
+		width: 100%;
+		padding: 10px 0px;
+	}
+
+	#touch {
+		/* Checkbox invisible */
+		position: absolute;
+		opacity: 0;
+		height: 0px;
+	}
+
+	#touch:checked+.slide {
+		height: 200px;
+	}
+
+	/* Onclick : hauteur à définir en fonction du nombre de liens */
+}
+/*---------------------------------------index------------------------------------------------*/
 /*Main index*/
 main{
     padding: 4%;
@@ -80,16 +154,19 @@ main{
 .services{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .services article{
     width: 28%;
+    max-width: 520px;
+    min-width: 250px;
 }
 
 .services article img{
     height: 20px;
 }
-
+/*-----------------------------------------entreprise----------------------------------------------*/
 /*Main entreprise*/
 .entreprise{
     display: flex;
@@ -121,8 +198,30 @@ main{
 .nos-engagements{
     max-width: 500px;
 }
+.nos-engagements h1{
+    font-size: 4em;
+}
 
+
+@media (max-width: 1024px){
+    .galerie-entreprise img{
+        width: 40vw;
+    }
+    .photo-alice{
+        display: contents;
+        max-width: 100%;
+        height: 100%;
+    }
+    .photo-alice img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+/*-----------------------------------------contact---------------------------------------*/
 /*main contact*/
+.contact h1, p{
+    text-align: center;
+}
 .formulaire{
     display: flex;
     flex-direction: column;
@@ -134,10 +233,10 @@ main{
     padding-bottom: 2em;
 }
 
-label{
+.formulaire label{
     padding: 3% 0;
 }
-
+/*-------------------------------------realisation--------------------------------------*/
 /*main réalisation*/
 .titre-réalisation{
     text-align: center;
@@ -149,7 +248,7 @@ label{
     justify-content: center;
     align-items: center;
     gap: 16px;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px 10px;
 }
@@ -169,4 +268,3 @@ footer{
     background: gray;
     box-shadow: 2px 5px 5px black;
 }
-
